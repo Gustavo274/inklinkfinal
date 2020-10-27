@@ -75,12 +75,12 @@ function App() {
       .then((authUser) => {
         return authUser.user.updateProfile({
           displayName: username
-        })
+        });
       })
       .catch((error) => alert(error.message));
 
     setOpen(false);
-  }
+  };
 
   const signIn = (event) => {
     event.preventDefault();
