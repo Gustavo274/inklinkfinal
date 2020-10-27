@@ -90,7 +90,7 @@ function App() {
       .catch((error) => alert(error.message));
 
     setOpenSingIn(false);
-  }
+  };
 
   return (
     <div className="app">

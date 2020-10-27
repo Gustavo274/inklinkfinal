@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./Post.css";
-import Avatar from "@material-ui/core/Avatar"
+import Avatar from "@material-ui/core/Avatar";
 import { db } from "./firebase";
 import firebase from "firebase";
 
 function Post({ postId, user, username, caption, imageUrl }) {
     const [comments, setComments] = useState([]);
-    const [comment, setComment] = useState('');
+    const [comment, setComment] = useState("");
 
     useEffect(() => {
         let unsubscribe;
@@ -34,7 +34,7 @@ function Post({ postId, user, username, caption, imageUrl }) {
             username: user.displayName,
             timestamp: firebase.firestore.FieldValue.serverTimestamp()
         });
-        setComment('');
+        setComment("");
     };
 
     return (
@@ -83,7 +83,7 @@ function Post({ postId, user, username, caption, imageUrl }) {
                 </form>
             )}
         </div>
-    )
+    );
 }
 
 export default Post;

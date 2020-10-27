@@ -61,7 +61,7 @@ function Imageupload({ username }) {
                 Upload
            </Button>
         </div>
-    )
+    );
 }
 
 export default Imageupload;
