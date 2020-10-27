@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import './Post.css';
-import Avatar from '@material-ui/core/Avatar'
-import { db } from './firebase';
-import firebase from 'firebase';
+import React, { useState, useEffect } from "react";
+import "./Post.css";
+import Avatar from "@material-ui/core/Avatar"
+import { db } from "./firebase";
+import firebase from "'firebase'";
 
 function Post({ postId, user, username, caption, imageUrl }) {
     const [comments, setComments] = useState([]);
@@ -86,4 +86,4 @@ function Post({ postId, user, username, caption, imageUrl }) {
     )
 }
 
-export default Post
+export default Post;

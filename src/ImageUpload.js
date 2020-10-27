@@ -1,8 +1,8 @@
-import { Button } from '@material-ui/core'
-import React, { useState } from 'react'
+import { Button } from "@material-ui/core";
+import React, { useState } from "react";
 import { storage, db } from "./firebase";
-import firebase from "firebase"
-import './ImageUpload.css';
+import firebase from "firebase";
+import "./ImageUpload.css";
 
 function Imageupload({ username }) {
     const [image, setImage] = useState(null);
@@ -55,7 +55,7 @@ function Imageupload({ username }) {
     return (
         <div className="imageupload">
             <progress className="imageupload__progress" value={progress} max="100" />
-            <input type="text" placeholder='Digite uma legenda...' onChange={event => setCaption(event.target.value)} value={caption} />
+            <input type="text" placeholder="Digite uma legenda..." onChange={event => setCaption(event.target.value)} value={caption} />
             <input type="file" onChange={handleChange} />
             <Button onClick={handleUpload}>
                 Upload
@@ -64,4 +64,4 @@ function Imageupload({ username }) {
     )
 }
 
-export default Imageupload
+export default Imageupload;
