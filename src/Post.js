@@ -35,7 +35,7 @@ function Post({ postId, user, username, caption, imageUrl }) {
             timestamp: firebase.firestore.FieldValue.serverTimestamp()
         });
         setComment('');
-    }
+    };
 
     return (
         <div className="post">
