@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
 }
 
@@ -28,7 +28,7 @@
   justify-content: space-between;
 }
 
-.app__signup  {
+.app__signup {
   display: flex;
   flex-direction: column;
   width: 100%;
