@@ -7,7 +7,7 @@ import "./ImageUpload.css";
 function Imageupload({ username }) {
     const [image, setImage] = useState(null);
     const [progress, setProgress] = useState(0);
-    const [caption, setCaption] = useState('');
+    const [caption, setCaption] = useState("");
 
     const handleChange = (e) => {
         if (e.target.files[0]) {

@@ -51,12 +51,12 @@ function App() {
       } else {
         setUser(null);
       }
-    })
+    });
 
     return () => {
       unsubscribe();
-    }
-  }, [user, username])
+    };
+  }, [user, username]);
 
   useEffect(() => {
     db.collection("posts").orderBy("timestamp", "desc").onSnapshot(snapshot => {
@@ -87,7 +87,7 @@ function App() {
 
     auth
       .signInWithEmailAndPassword(email, password)
-      .catch((error) => alert(error.message))
+      .catch((error) => alert(error.message));
 
     setOpenSingIn(false);
   }
