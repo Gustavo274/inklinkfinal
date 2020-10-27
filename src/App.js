@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import logo from "./img/Inklink_logo.png";
 import Post from "./Post";
-import { auth, db } from "./firebase"
+import { auth, db } from "./firebase";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import { Button, Input } from "@material-ui/core";
-import ImageUpload from "./ImageUpload"
+import ImageUpload from "./ImageUpload";
 
 function getModalStyle() {
   const top = 50;
